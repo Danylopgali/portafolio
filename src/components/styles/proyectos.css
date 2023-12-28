@@ -1,0 +1,19 @@
+.proyectos{
+        position: relative;
+        height: 100%;
+        background-color: #DFDFDF;
+}
+.tituloP{
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Open Sans', sans-serif;
+    color: #1B68B0;
+   font-size: 36px;
+}
+.container{
+    height: 670px;
+    width: 1006px;
+}
