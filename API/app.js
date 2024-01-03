@@ -5,9 +5,11 @@ const app = express();
 const cors = require('cors');
 const port = 3001;
 const emailRoutes = require('./routers/routers');
+const connectDB = require("./DB/db")
 
 app.use(cors()); // Agrega esta línea para permitir todas las solicitudes CORS
 app.use(express.json());
+connectDB();
 
 app.get("/", (req, res) => {
   res.send("hola mundo");
