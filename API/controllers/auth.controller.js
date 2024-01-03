@@ -1,0 +1,4 @@
+
+const authController = (req,res) =>{
+
+}
