@@ -6,10 +6,18 @@ const cors = require('cors');
 const port = 3001;
 const emailRoutes = require('./routers/routers');
 const connectDB = require("./DB/db")
+const fileUpload = require ("express-fileupload");
 
 app.use(cors()); // Agrega esta línea para permitir todas las solicitudes CORS
-app.use(express.json());
+//conenccion con la base de datos 
 connectDB();
+
+app.use(express.json());
+//guarda la imagen temporalmente 
+app.use(fileUpload({
+  useTempFiles : true,
+  tempFileDir : '/tmp/'
+}));
 
 app.get("/", (req, res) => {
   res.send("hola mundo");
