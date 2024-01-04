@@ -1,7 +1,14 @@
 const Proyecto =require( "../DB/models/proyectos");
 const cloudinary = require("../cloudinary/cloudinary")
 
-const agregarPortadaController = (req,res) =>{
+const agregarPortadaController = async(req,res) =>{
+
+  try {
+    
+    
+  } catch (error) {
+    
+  }
 
 
 }

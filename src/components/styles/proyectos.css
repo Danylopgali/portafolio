@@ -1,19 +1,23 @@
-.proyectos{
-        position: relative;
-        height: 100%;
-        background-color: #DFDFDF;
-}
-.tituloP{
+.proyectos {
+    position: relative;
+    min-height: 100%; /* Cambiado de height a min-height */
+    background-color: #DFDFDF;
+  }
+  
+  .tituloP {
     position: absolute;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Open Sans', sans-serif;
     color: #1B68B0;
-   font-size: 36px;
-}
-.container{
-    height: 670px;
+    font-size: 36px;
+  }
+  
+  .container {
+    min-height: 670px; /* Cambiado de height a min-height */
     width: 1006px;
-}
+    
+  }
+  

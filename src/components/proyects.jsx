@@ -1,3 +1,4 @@
+import Cards from "./cards";
 import "./styles/proyectos.css"
 function Proyects() {
     return (
@@ -7,7 +8,7 @@ function Proyects() {
       Proyectos
       </div>
       <div className="container">
-       
+       <Cards/>
       </div>
       </div>
     );
