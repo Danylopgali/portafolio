@@ -10,7 +10,7 @@ function Cards() {
   useEffect(() => {
     const obtenerProyectos = async () => {
       try {
-        const response = await axios.get('https://portafolio-six-rosy.vercel.app/all-proyects');
+        const response = await axios.get('/all-proyects');
         setProyectos(response.data);
       } catch (error) {
         console.error('Error al obtener proyectos desde el servidor:', error);
