@@ -2,8 +2,8 @@
     "version": 2,
     "routes": [
       {
-        "src": "/api/send-email",
-        "dest": "/api/send-email"
+        "src": "/send-email",
+        "dest": "/send-email"
       },
       {
         "src": "/api/agregar-portada",
