@@ -31,7 +31,7 @@
       }
     ],
     "functions": {
-      "api/send-email": {
+      "/send-email": {
         "runtime": "vercel-node@2",
         "memory": 128
       },
