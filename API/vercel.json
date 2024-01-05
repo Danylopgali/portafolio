@@ -55,6 +55,13 @@
         "runtime": "vercel-node@2",
         "memory": 128
       }
-    }
+    },
+    "builds": [
+        {
+          "src": "/app.js*",
+          "use": "@vercel/node"
+        }
+      ]
+    
   }
   
