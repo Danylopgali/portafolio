@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = 3001;
+const port = process.env.PORT || 3001;
 const emailRoutes = require('./routers/routers');
 const connectDB = require("./DB/db")
 const fileUpload = require ("express-fileupload");
