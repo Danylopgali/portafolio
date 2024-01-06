@@ -1,67 +1,65 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/send-email",
-        "dest": "/send-email"
-      },
-      {
-        "src": "/api/agregar-portada",
-        "dest": "/api/agregar-portada"
-      },
-      {
-        "src": "/api/agregar-proyecto",
-        "dest": "/api/agregar-proyecto"
-      },
-      {
-        "src": "/api/agregar-descripcion",
-        "dest": "/api/agregar-descripcion"
-      },
-      {
-        "src": "/api/agregar-foto-de-perfil",
-        "dest": "/api/agregar-foto-de-perfil"
-      },
-      {
-        "src": "/api/all-proyects",
-        "dest": "/api/all-proyects"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/app.js"
-      }
-    ],
-    "functions": {
-      "/send-email": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      },
-      "api/agregar-portada": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      },
-      "api/agregar-proyecto": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      },
-      "api/agregar-descripcion": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      },
-      "api/agregar-foto-de-perfil": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      },
-      "api/all-proyects": {
-        "runtime": "vercel-node@2",
-        "memory": 128
-      }
+  "version": 2,
+  "routes": [
+    {
+      "src": "/send-email",
+      "dest": "/send-email"
     },
-    "builds": [
-        {
-          "src": "/app.js*",
-          "use": "@vercel/node"
-        }
-      ]
-    
-  }
-  
+    {
+      "src": "/api/agregar-portada",
+      "dest": "/api/agregar-portada"
+    },
+    {
+      "src": "/api/agregar-proyecto",
+      "dest": "/api/agregar-proyecto"
+    },
+    {
+      "src": "/api/agregar-descripcion",
+      "dest": "/api/agregar-descripcion"
+    },
+    {
+      "src": "/api/agregar-foto-de-perfil",
+      "dest": "/api/agregar-foto-de-perfil"
+    },
+    {
+      "src": "/api/all-proyects",
+      "dest": "/api/all-proyects"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ],
+  "functions": {
+    "/send-email": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    },
+    "/api/agregar-portada": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    },
+    "/api/agregar-proyecto": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    },
+    "/api/agregar-descripcion": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    },
+    "/api/agregar-foto-de-perfil": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    },
+    "/api/all-proyects": {
+      "runtime": "vercel-node@2",
+      "memory": 128
+    }
+  },
+  "builds": [
+    {
+      "src": "/app.js*",
+      "use": "@vercel/node"
+    }
+  ]
+}
