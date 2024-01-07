@@ -22,7 +22,7 @@ function Contacto() {
     }
 
     try {
-      await axios.post('http://localhost:3001/send-email', {
+      await axios.post('https://portafolio-ig97.onrender.com/send-email', {
         subject,
         text,
       });
