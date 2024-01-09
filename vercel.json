@@ -2,30 +2,6 @@
   "version": 2,
   "routes": [
     {
-      "src": "/send-email",
-      "dest": "/send-email"
-    },
-    {
-      "src": "/api/agregar-portada",
-      "dest": "/api/agregar-portada"
-    },
-    {
-      "src": "/api/agregar-proyecto",
-      "dest": "/api/agregar-proyecto"
-    },
-    {
-      "src": "/api/agregar-descripcion",
-      "dest": "/api/agregar-descripcion"
-    },
-    {
-      "src": "/api/agregar-foto-de-perfil",
-      "dest": "/api/agregar-foto-de-perfil"
-    },
-    {
-      "src": "/api/all-proyects",
-      "dest": "/api/all-proyects"
-    },
-    {
       "src": "/(.*)",
       "dest": "/app.js"
     }
